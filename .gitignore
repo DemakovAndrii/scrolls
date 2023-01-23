@@ -1,0 +1,21 @@
+# dependencies
+clickScroll/node_modules
+clickScroll/.pnp
+
+# testing
+clickScroll/coverage
+
+# production
+clickScroll/build
+
+
+# dependencies
+paralaxScroll/node_modules
+paralaxScroll/.pnp
+
+# testing
+paralaxScroll/coverage
+
+# production
+paralaxScroll/build
+

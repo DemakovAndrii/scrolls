@@ -1,0 +1,74 @@
+html {
+	scroll-snap-type: y mandatory;
+}
+* {
+	font-family: sofia-pro, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+	color: var(--accent);
+}
+
+.screen-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	scroll-snap-align: center;
+	perspective: 500px;
+}
+.img-container {
+	width: 800px;
+	height: 500px;
+	position: relative;
+	max-height: 90vh;
+	margin: 20px;
+	background-color: aqua;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.numbers {
+	margin: 0;
+	background-color: rgba(95, 158, 160, 0.514);
+	color:rgb(219, 159, 27);
+	left: calc(60% + 130px);
+	font-size: 56px;
+	font-weight: 700;
+	letter-spacing: -3px;
+	line-height: 1.2;
+	position: absolute;
+}
+
+.dotsContainer {
+	width: 70px;
+	height: 200px;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	position: fixed;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+.dot {
+	height: 8px;
+	width: 8px;
+	background-color: rgb(219, 159, 27);
+	border-radius: 50%;
+}
+.dot_active {
+	height: 15px;
+	width: 15px;
+	background-color: rgb(219, 159, 27);
+	border-radius: 50%;
+}
